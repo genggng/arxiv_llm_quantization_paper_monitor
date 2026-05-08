@@ -1,10 +1,24 @@
 {
-  "count": 257,
+  "count": 258,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-05-07",
+  "crawled_date_max": "2026-05-08",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026-05-06",
   "papers": [
+    {
+      "arxiv_id": "2605.02933",
+      "title": "Relation Reasoning with LLMs in Expensive Optimization",
+      "authors": "Ye Lu, Bingdong Li, Aimin Zhou, Hao Hao",
+      "affiliations": "Shanghai Institute of AI for Education, East China Normal University, Shanghai, China",
+      "published_date": "2026-04-30",
+      "categories": "cs.NE",
+      "abstract": "Expensive optimization problems (EOPs) are black-box tasks with costly objective evaluations and no gradient access, making the evaluation budget the key bottleneck. Surrogate-assisted evolutionary algorithms (SAEAs) reduce evaluations via surrogate predictions, but conventional surrogates often require frequent retraining as populations evolve, incurring overhead. This paper proposes R2SAEA, a reinforcement-trained relation-based large language model (LLM) surrogate assisted evolutionary algorithm. We cast relation-based surrogate modeling as an in-context pairwise reasoning task. To enable efficient inference in evolutionary loops, we develop an anchor-based iterative context construction strategy that reduces prompt complexity from quadratic to linear in population size, and a voting-based aggregation scheme that converts predicted relations into scores for offspring selection. We further build an RL pipeline from evolutionary trajectories and fine-tune Qwen2.5 with GRPO. Experiments on single- and multi-objective benchmarks show improved relation prediction and state-of-the-art optimization performance over strong SAEA baselines and general LLMs. Quantization also enables efficient edge deployment, supporting a zero-shot surrogate paradigm without per-generation retraining. Code and models are available at https://github.com/Septend9/R2SAEA.",
+      "summary_cn": "该论文提出R2SAEA，将LLM作为关系代理嵌入进化优化，通过锚点迭代上下文策略将提示复杂度从二次降至线性，并用投票聚合机制预测子代优劣。利用GRPO微调Qwen2.5，在昂贵优化基准上取得最优性能，量化部署支持边缘端推理且无需逐代重训练。",
+      "pdf_filename": "2605.02933.pdf",
+      "crawled_date": "2026-05-08",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2605.02933"
+    },
     {
       "arxiv_id": "2605.04738",
       "title": "OSAQ: Outlier Self-Absorption for Accurate Low-bit LLM Quantization",
